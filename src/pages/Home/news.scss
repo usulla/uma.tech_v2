@@ -1,0 +1,84 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.competence {
+  &__wrap {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: rem(-80);
+    @media (max-width: $mobile_l) {
+      width: 90%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: rem(50);
+    &:last-child {
+      margin-bottom: rem(0);
+    }
+    @media (max-width: $mobile_l) {
+      background-color: $blue;
+      padding-bottom: rem(30);
+    }
+  }
+  &__item {
+    width: 30%;
+    color: #fff;
+    padding: rem(27) 0;
+    margin-bottom: rem(50);
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    &:nth-child(1) {
+      background: $blue;
+    }
+    &:nth-child(2) {
+      background: $lightblue;
+    }
+    &:nth-child(3) {
+      background: $darkblue;
+    }
+    &:nth-child(4) {
+      background: $lightblue;
+    }
+    &:nth-child(5) {
+      background: $blue;
+      width: 65%;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    @media (max-width: $mobile_l) {
+      width: 100%;
+      margin-right: 0;
+      padding: rem(20) 0;
+    }
+    h3 {
+      font-size: rem(23);
+      line-height: rem(30);
+      font-weight: 600;
+      margin-bottom: rem(20);
+      padding: 1.75rem 2rem 0;
+      @media (max-width: $mobile_l) {
+        padding: 0 rem(20);
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    p {
+      padding: 0 rem(40);
+      @media (max-width: $mobile_l) {
+        padding: 0 rem(20);
+      }
+      &.hashtag {
+        text-align: right;
+        margin: 0;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

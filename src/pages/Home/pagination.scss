@@ -1,0 +1,97 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.pagination {
+  display: flex!important;
+
+  @include mq(tablet, max) {
+	margin: 0 auto;
+	justify-content:center;
+  }
+  &__wrap {
+    width: rem(30);
+    height: rem(30);
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &--active {
+      border: 1px solid #0d5ade;
+    }
+  }
+  &__item {
+    width: rem(16);
+    height: rem(16);
+    background-color: #fff;
+    background-color: #0d5ade;
+    border-radius: 50%;
+  }
+  ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+  }
+
+  li {
+    list-style-type: none; /* Убираем маркеры */
+  }
+
+  li {
+    width: rem(30);
+    height: rem(30);
+    border-radius: 100%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.7s;
+    float: left;
+  }
+
+  li.slick-active {
+    border: 1px solid #0d5ade;
+  }
+
+  li button {
+    cursor: pointer;
+    font-size: 0;
+    padding: 0;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    width: rem(16);
+    height: rem(16);
+    background-color: #fff;
+    background-color: #0d5ade;
+    border-radius: 100%;
+  }
+}
+
+.pagination2 {
+  li {
+    background-color: #0d5ade;
+    border: 1px solid #0d5ade;
+  }
+
+  li button {
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    width: rem(16);
+    height: rem(16);
+    background-color: #0d5ade;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  li.slick-active {
+    border: 1px solid #fff;
+  }
+}

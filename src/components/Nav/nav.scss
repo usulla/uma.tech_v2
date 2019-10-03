@@ -1,0 +1,64 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.nav {
+  background-color: $blue;
+  @media (max-width: $mobile_l) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    width: 100%;
+  }
+  &__wrap {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    img {
+      display: block;
+    }
+  }
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    .menu-ul__li {
+      float: left;
+      padding: 25px;
+      @media (min-width: $mobile_l+1) and (max-width: $tablets) {
+        padding: 15px;
+      }
+      @media (min-width: $tablets+1) and (max-width: $desctops_s) {
+        padding: 20px;
+      }
+      a {
+        font-size: rem(20);
+        line-height: rem(24);
+        font-weight: 400;
+        color: #fff;
+        text-decoration: none;
+
+        &.active {
+          border-bottom: 2px solid $lightblue;
+        }
+        &:hover {
+          border-bottom: 2px solid $lightblue;
+        }
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+  &__item {
+    display: inline-block;
+    margin-right: rem(30);
+    vertical-align: middle;
+    &:last-child {
+      margin-right: rem(0);
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.project {
+  text-align: center;
+  margin-bottom: rem(120);
+  @include mq(tablet, max) {
+    margin-bottom: rem(30);
+  }
+  &__header {
+    font-size: rem(45);
+    line-height: rem(55);
+    font-weight: 600;
+    margin-bottom: rem(80);
+    @include mq(tablet, max) {
+      width: 90%;
+      margin: 0 auto;
+      font-size: rem(20);
+      line-height: rem(24);
+    }
+  }
+  &__cont {
+    img {
+      max-width: 82%;
+      margin: 0 auto;
+      @include mq(tablet, max) {
+        max-width: 32% !important;
+      }
+    }
+  }
+  .carousel-logo {
+    top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-logo .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .slick-slide img {
+    width: auto !important;
+    max-height: 56px;
+  }
+  .slick-arrow {
+    position: absolute;
+    width: 15px;
+    &.next-slick {
+      right: 10%;
+      transform: rotate(180deg);
+    }
+    &.prev-slick {
+      left: 10%;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+  }
+}

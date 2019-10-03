@@ -1,0 +1,29 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.footer {
+	padding: rem(20) 0; 
+	background-color: $blue;
+	color: #fff;
+	&__block {
+		min-height: rem(74);
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__item {
+		margin-right: rem(15);
+		font-weight:600;
+		&:last-child {
+			margin-right: rem(0);
+		}
+		&:first-child {
+			font-weight:400;
+        }
+        a{
+            color:#fff;
+            text-decoration: none;
+        }
+	}
+}

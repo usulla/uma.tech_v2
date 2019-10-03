@@ -1,0 +1,79 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.about {
+  background-color: #fff;
+  display: flex;
+  margin: rem(120) auto;
+  align-items: center;
+  @media (max-width: $tablets) {
+	margin: rem(100) auto;
+  }
+  @media (max-width: $mobile_l) {
+    margin: 50px 0 0;
+    flex-direction: column;
+	position: relative;
+	padding-bottom:60px;
+  }
+  &__image {
+    width: 45%;
+    margin-right: 5%;
+    img {
+      display: block;
+    }
+    @media (max-width: $mobile_l) {
+      width: 100%;
+      margin-right: 0%;
+      margin-top: rem(70);
+      margin-bottom: rem(45);
+    }
+  }
+  &__right {
+    width: 42%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media (max-width: $mobile_l) {
+      width: 90%;
+      align-self: center;
+    }
+  }
+  &__header {
+    margin-bottom: rem(60);
+    span {
+      color: #0d5ade;
+    }
+    @media (max-width: $mobile_l) {
+      margin-bottom: 0;
+      position: absolute;
+      top: 0;
+    }
+    @media (max-width: $tablets) {
+      margin-bottom: rem(38);
+    }
+  }
+  &__text {
+    @media (max-width: $mobile_l) {
+      text-align: center;
+    }
+    .typography--headersm {
+      margin-bottom: rem(30);
+      @media (max-width: $mobile_l) {
+        margin-bottom: rem(30);
+      }
+    }
+    .typography--text {
+      margin-bottom: rem(60);
+      @media (max-width: $mobile_l) {
+        margin-bottom: rem(30);
+      }
+    }
+    p {
+      color: #555;
+    }
+  }
+
+  &__nav {
+  }
+}
