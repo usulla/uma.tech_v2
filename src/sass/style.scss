@@ -18,12 +18,9 @@ body {
   font-weight: $font_weight_normal;
   min-height: 100vh;
   text-align: left;
-  @media (max-width: $mobile_l) {
-    padding-top: 90px;
-  }
 }
 html {
-  background: #000;
+  background: $blue;
   box-sizing: border-box;
   font-size: 20px;
 

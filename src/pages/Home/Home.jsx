@@ -10,7 +10,7 @@ const Home = ({ isMobile, dataNews, dataAbout, header_title }) => {
       <Header isMobile={isMobile} title={header_title} />
       <About slider_list={dataAbout} />
       <Competence isMobile={isMobile} dataNews={dataNews} />
-      <Projects />
+      <Projects isMobile={isMobile} />
     </React.Fragment>
   );
 };

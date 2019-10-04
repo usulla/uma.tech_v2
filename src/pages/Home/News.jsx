@@ -15,7 +15,7 @@ var settings = {
 const News = ({ isMobile, dataNews }) => {
   if (!isMobile) {
     return (
-      <div className="competence__wrap">
+      <div className="competence__wrap container">
         <div className="competence__content">
           {dataNews.map((item, index) => {
             return (

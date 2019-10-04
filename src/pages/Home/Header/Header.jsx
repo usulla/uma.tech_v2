@@ -4,7 +4,7 @@ import Branchs from "./Branchs/Branchs.jsx";
 
 const Header = ({ isMobile, title }) => {
   return (
-    <section class="section">
+    <header class="section header">
       <div className="bg">
         <div className="content">
           <div className="container content__wrapper">
@@ -15,7 +15,7 @@ const Header = ({ isMobile, title }) => {
         </div>
         <Branchs />
       </div>
-    </section>
+    </header>
   );
 };
 export default Header;

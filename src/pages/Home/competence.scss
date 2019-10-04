@@ -6,8 +6,7 @@
   @media (max-width: $mobile_l) {
     margin-bottom: rem(50);
   }
-
-  &__text {
+  .competence__top {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -15,6 +14,8 @@
     background: #fff url("../../images/bg/bg_3.jpg") no-repeat center;
     background-size: cover;
     justify-content: center;
+  }
+  &__text {
     @media (max-width: $mobile_l) {
       min-height: rem(480);
       margin-top: rem(-80);
@@ -29,11 +30,11 @@
       }
     }
     p.typography {
-      width: 70%;
+      width: 100%;
       margin: 0 auto;
       line-height: rem(37);
       font-family: ProximaNova;
-      font-weight: 400;
+      font-weight: 500;
       font-size: rem(30);
       color: #fff;
       @media (max-width: $mobile_l) {

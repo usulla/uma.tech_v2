@@ -9,14 +9,23 @@
     left: 0;
     z-index: 12;
     width: 100%;
+
+    &.active .nav__wrap {
+      height: 70px;
+    }
   }
+
   &__wrap {
     height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: height 0.4s ease;
   }
   &__left {
+    // @media (max-width: $mobile_l) {
+    //   width: 140px;
+    // }
     img {
       display: block;
     }

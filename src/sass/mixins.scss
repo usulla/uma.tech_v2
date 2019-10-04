@@ -76,7 +76,7 @@ $em-base: 20px !default;
   $em-base: 16px;
 }
 @media (min-width: $mobile_p+1) and (max-width: $mobile_l) {
-  $em-base: 16x;
+  $em-base: 16px;
 }
 @media (min-width: $mobile_l+1) and (max-width: $tablets) {
   $em-base: 14px;
