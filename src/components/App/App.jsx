@@ -9,6 +9,7 @@ import Footer from "../Footer/Footer.jsx";
 import Products from "../../pages/Products/Products.jsx";
 import Licenses from "../../pages/Licenses/Licenses.jsx";
 import Contacts from "../../pages/Contacts/Contacts.jsx";
+import Competences from "../../pages/Competences/Competences.jsx";
 
 class App extends Component {
   constructor(props) {
@@ -56,7 +57,7 @@ class App extends Component {
   }
 
   render() {
-    const { dataHeader, dataAbout, dataNews, dataLicenses, dataProducts } = appData;
+    const { dataHeader, dataAbout, dataNews, dataLicenses, dataProducts, dataCompetences } = appData;
     return (
       <React.Fragment>
         <Nav list={dataHeader.nav} isMobile={this.state.isMobile} />
@@ -65,12 +66,12 @@ class App extends Component {
             <MobileMenu list={dataHeader.nav} />
           </React.Fragment>
         ) : null}
-        <Home
+        {/* <Home
           isMobile={this.state.isMobile}
           dataNews={dataNews}
           dataAbout={dataAbout}
           header_title={dataHeader.title}
-        />
+        /> */}
         {/* <Licenses
           isMobile={this.state.isMobile}
           dataLicenses={dataLicenses}
@@ -79,6 +80,7 @@ class App extends Component {
           isMobile={this.state.isMobile}
         /> */}
         {/* <Products isMobile={this.state.isMobile} dataProducts={dataProducts}/> */}
+        <Competences isMobile={this.state.isMobile} dataCompetences={dataCompetences}/>
         <Footer isMobile={this.state.isMobile} />
       </React.Fragment>
     );

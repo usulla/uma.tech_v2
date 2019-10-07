@@ -23,9 +23,9 @@ const About = ({ slider_list }) => {
         </div>
         <div className="about__right">
           <div className="about__header">
-            <h2 className="typography typography--header">
+            <h1 className="typography typography--header">
               <span>| </span>О нас
-            </h2>
+            </h1>
           </div>
           <Slider {...settings} className="about__text">
             {slider_list.map((item, index) => {

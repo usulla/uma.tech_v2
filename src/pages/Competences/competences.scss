@@ -1,0 +1,45 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.competences__wrap {
+  h2 {
+    padding-top: 60px;
+  }
+  p {
+    font-size: rem(16);
+    margin: 10px 0 rem(40);
+  }
+  .competences__item--white {
+    p {
+      color: #555555;
+    }
+    .title {
+      color: $blue;
+      display: block;
+      margin-bottom: rem(20);
+      font-weight: 600;
+    }
+  }
+  .competences__item--blue {
+    background: $blue;
+    color: #fff;
+  }
+  .competences__item-1 {
+    .competences__item--left {
+      p {
+        font-size: rem(20);
+        margin-top: rem(80);
+      }
+    }
+  }
+  .competences__item--content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+  .competences__item--right,
+  .competences__item--left {
+    width: 50%;
+    max-width: 500px;
+  }
+}
