@@ -7,6 +7,7 @@ import Home from "../../pages//Home/Home.jsx";
 import appData from "./appData.json";
 import Footer from "../Footer/Footer.jsx";
 import Licenses from "../../pages/Licenses/Licenses.jsx";
+import Contacts from "../../pages/Contacts/Contacts.jsx";
 
 class App extends Component {
   constructor(props) {
@@ -69,9 +70,12 @@ class App extends Component {
           dataAbout={dataAbout}
           header_title={dataHeader.title}
         /> */}
-        <Licenses
+        {/* <Licenses
           isMobile={this.state.isMobile}
           dataLicenses={dataLicenses}
+        /> */}
+        <Contacts
+          isMobile={this.state.isMobile}
         />
         <Footer isMobile={this.state.isMobile} />
       </React.Fragment>
