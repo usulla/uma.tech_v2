@@ -1,6 +1,6 @@
 import React from "react";
 import "./competences.scss";
-import bg_pass_media from "../../images/products_page/bg_pass_media@2x.png";
+import competition_bg from "../../images/competition_page/competition_bg@2x.jpg";
 
 const Competences = ({ isMobile, dataCompetences }) => {
   return (
