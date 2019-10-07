@@ -1,7 +1,7 @@
 import React from "react";
 import "./contacts.scss";
 
-const Contacts = ({ isMobile, dataContacts }) => {
+const Contacts = ({ isMobile }) => {
   return (
     <div className="page contacts__wrap container_big">
       <div className="contacts__content">

@@ -20,7 +20,7 @@ const Licenses = ({ isMobile, dataLicenses }) => {
             return (
               <div className="license__item">
                 <div className="license__item--left">
-                  <div className="title">{item.title}</div>
+                  <h3 className="title">{item.title}</h3>
                   <div className="props">
                     <div className="prop prop-1">
                       <div className="prop-title">{item.props[0].title}</div>

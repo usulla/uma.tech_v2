@@ -33,9 +33,6 @@
         display: block;
       }
       .title {
-        font-weight: 600;
-        font-size: rem(30);
-        line-height: rem(37);
         width: 55%;
         max-width: 570px;
         display: inline-block;
@@ -97,9 +94,9 @@
       }
     }
     .license__item--right {
-    @media (min-width: $mobile_l+1) {
+      @media (min-width: $mobile_l+1) {
         display: none;
-    }
+      }
       width: 20px;
       padding-top: 23px;
       .arrow-light {
