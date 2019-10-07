@@ -8,7 +8,10 @@
 img {
   max-width: 100%;
 }
-
+html, body{
+  max-width:100vw;
+  overflow-x: hidden;
+}
 body {
   background: #fff;
   margin: 0;
@@ -110,12 +113,19 @@ li {
 h2 {
   @media (max-width: $mobile_l) {
     font-size: 2rem !important;
-    line-height: 2.2rem!important;
+    line-height: 2.2rem !important;
   }
 }
 .container {
   margin-right: auto;
   margin-left: auto;
+}
+.page {
+  min-height: calc(100vh - 164px);
+  padding: 100px 0 60px;
+  @media (max-width: $mobile_l) {
+    padding: 160px 0 60px;
+  }
 }
 .animate-hidden {
   display: block;
@@ -150,7 +160,13 @@ h2 {
     font-size: rem(28);
     line-height: rem(34);
   }
-  &:before {
+  // &:before {
+  //   content:'';
+  //   position: absolute;
+  //   border-left: 3px solid $blue;
+  // }
+  span {
+    color: $blue;
   }
 }
 

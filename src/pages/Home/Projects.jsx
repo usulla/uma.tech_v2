@@ -89,39 +89,30 @@ class Projects extends Component {
                 <React.Fragment>
                   <div className="project__logos">
                     <div className="logo-item">
-                      <img src={project_1} alt="" class="tnt" />
                       <img src={project_1_hover} alt="" class="tnt hide" />
                     </div>
                     <div className="logo-item">
-                      <img src={project_2} alt="" class="tv3" />
                       <img src={project_2_hover} alt="" className="tv3 hide" />
                     </div>
                     <div className="logo-item">
-                      <img src={project_3} alt="" class="pyatnica" />
                       <img src={project_3_hover} alt="" class="pyatnica hide" />
                     </div>
                     <div className="logo-item">
-                      <img src={project_4} alt="" alt="" class="dvax2" />
                       <img src={project_4_hover} alt="" class="dvax2 hide" />
                     </div>
                     <div className="logo-item">
-                      <img src={project_5} alt="" alt="" class="tnt4" />
                       <img src={project_5_hover} alt="" class="tnt4 hide" />
                     </div>
                     <div className="logo-item">
-                      <img src={project_6} alt="" alt="" class="super" />
                       <img src={project_6_hover} alt="" class="super hide" />
                     </div>
                     <div className="logo-item">
-                      <img src={project_7} alt="" alt="" class="super" />
                       <img src={project_7_hover} alt="" class="match hide" />
                     </div>
                     <div className="logo-item">
-                      <img src={project_8} alt="" alt="" class="premier" />
                       <img src={project_8_hover} alt="" class="premier hide" />
                     </div>
                     <div className="logo-item">
-                      <img src={project_9} alt="" class="match_premier" />
                       <img
                         src={project_9_hover}
                         alt=""
@@ -129,7 +120,6 @@ class Projects extends Component {
                       />
                     </div>
                     <div className="logo-item">
-                      <img src={project_10} alt="" class="sportbox" />
                       <img
                         src={project_10_hover}
                         alt=""

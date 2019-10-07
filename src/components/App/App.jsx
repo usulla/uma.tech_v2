@@ -6,6 +6,7 @@ import Header from "../../pages/Home/Header/Header.jsx";
 import Home from "../../pages//Home/Home.jsx";
 import appData from "./appData.json";
 import Footer from "../Footer/Footer.jsx";
+import Licenses from "../../pages/Licenses/Licenses.jsx";
 
 class App extends Component {
   constructor(props) {
@@ -53,7 +54,7 @@ class App extends Component {
   }
 
   render() {
-    const { dataHeader, dataAbout, dataNews } = appData;
+    const { dataHeader, dataAbout, dataNews, dataLicenses } = appData;
     return (
       <React.Fragment>
         <Nav list={dataHeader.nav} isMobile={this.state.isMobile} />
@@ -62,11 +63,15 @@ class App extends Component {
             <MobileMenu list={dataHeader.nav} />
           </React.Fragment>
         ) : null}
-        <Home
+        {/* <Home
           isMobile={this.state.isMobile}
           dataNews={dataNews}
           dataAbout={dataAbout}
           header_title={dataHeader.title}
+        /> */}
+        <Licenses
+          isMobile={this.state.isMobile}
+          dataLicenses={dataLicenses}
         />
         <Footer isMobile={this.state.isMobile} />
       </React.Fragment>

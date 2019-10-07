@@ -41,9 +41,6 @@
   }
   &__header {
     margin-bottom: rem(60);
-    span {
-      color: #0d5ade;
-    }
     @media (max-width: $mobile_l) {
       margin-bottom: 0;
       position: absolute;

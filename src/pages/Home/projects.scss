@@ -3,7 +3,7 @@
 
 .project {
   text-align: center;
-  margin-bottom: rem(100);
+  margin-bottom: rem(200);
   @media (max-width: $mobile_l) {
     margin-bottom: rem(40);
   }
@@ -11,7 +11,7 @@
     font-size: rem(45);
     line-height: rem(55);
     font-weight: 600;
-    margin-bottom: rem(80);
+    margin-bottom: rem(120);
     @media (max-width: $mobile_l) {
       width: 90%;
       margin: 0 auto;
@@ -45,10 +45,8 @@
           width: 100%;
           position: absolute;
           opacity: 1;
-          transition: opacity 0.5s ease;
-          &.hide {
-            opacity: 0;
-          }
+          transition: filter 0.5s ease;
+          filter:grayscale(100%)
         }
         .tnt {
           max-width: 82px;
@@ -59,26 +57,16 @@
         &:hover {
           cursor: pointer;
           img {
-            opacity: 0;
+            filter:grayscale(0%)
           }
         }
         &:hover {
           cursor: pointer;
-          img {
-            opacity: 0;
-            &.hide{
-              opacity: 1;
-            }
-          }
         }
       }
       img {
         opacity: 1;
         transition: opacity 0.5s ease;
-
-        &.hide {
-          opacity: 0;
-        }
       }
       .tnt {
         max-width: 82px;
