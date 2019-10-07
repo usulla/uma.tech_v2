@@ -65,12 +65,12 @@ class App extends Component {
             <MobileMenu list={dataHeader.nav} />
           </React.Fragment>
         ) : null}
-        {/* <Home
+        <Home
           isMobile={this.state.isMobile}
           dataNews={dataNews}
           dataAbout={dataAbout}
           header_title={dataHeader.title}
-        /> */}
+        />
         {/* <Licenses
           isMobile={this.state.isMobile}
           dataLicenses={dataLicenses}
@@ -78,7 +78,7 @@ class App extends Component {
         {/* <Contacts
           isMobile={this.state.isMobile}
         /> */}
-        <Products isMobile={this.state.isMobile} dataProducts={dataProducts}/>
+        {/* <Products isMobile={this.state.isMobile} dataProducts={dataProducts}/> */}
         <Footer isMobile={this.state.isMobile} />
       </React.Fragment>
     );

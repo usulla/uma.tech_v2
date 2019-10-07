@@ -25,6 +25,7 @@ import project_7_hover from "../../images/logos/logo-7_hover.png";
 import project_8_hover from "../../images/logos/logo-8_hover.png";
 import project_9_hover from "../../images/logos/logo-9_hover.png";
 import project_10_hover from "../../images/logos/logo-10_hover.png";
+import project_11_hover from "../../images/logos/logo-11_hover.png";
 
 function NextArrow(props) {
   const { className, style, onClick } = props;
@@ -114,6 +115,13 @@ class Projects extends Component {
                     </div>
                     <div className="logo-item">
                       <img
+                        src={project_11_hover}
+                        alt=""
+                        class="match_club hide"
+                      />
+                    </div>
+                    <div className="logo-item">
+                      <img
                         src={project_9_hover}
                         alt=""
                         class="match_premier hide"
@@ -138,6 +146,7 @@ class Projects extends Component {
                   <img src={project_6_hover} alt="" />
                   <img src={project_7_hover} alt="" />
                   <img src={project_8_hover} alt="" />
+                  <img src={project_11_hover} alt="" />
                   <img src={project_9_hover} alt="" />
                   <img src={project_10_hover} alt="" />
                 </Slider>
