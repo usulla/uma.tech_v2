@@ -3,11 +3,24 @@
 
 .competences__wrap {
   h2 {
-    padding-top: 60px;
+    padding-top: rem(60);
+    padding-bottom: rem(80);
+  }
+  h3{
+    margin-bottom: rem(55);
   }
   p {
-    font-size: rem(16);
+    font-size: rem(18);
+    line-height: rem(23);
     margin: 10px 0 rem(40);
+  }
+  .competences__item{
+    padding-bottom: 3rem;
+    .title {
+      display: block;
+      margin-bottom: rem(20);
+      font-weight: 600;
+    }
   }
   .competences__item--white {
     p {
@@ -15,31 +28,71 @@
     }
     .title {
       color: $blue;
-      display: block;
-      margin-bottom: rem(20);
-      font-weight: 600;
     }
   }
   .competences__item--blue {
     background: $blue;
+    padding-bottom: rem(100);
     color: #fff;
+    h2{
+      padding-top: rem(100);
+    }
   }
   .competences__item-1 {
     .competences__item--left {
       p {
         font-size: rem(20);
-        margin-top: rem(80);
+        margin-top: rem(100);
       }
+    }
+  }
+  .competences__item-2 {
+    .competences__item--content{
+      flex-direction:column;
+    }
+    .competences__item--top .col-1, .competences__item--top .col-2 {
+     margin-bottom:rem(25);
+    }
+  }
+  .competences__item-3 {
+    display: inline;
+      .title{
+        display: inline;
+      }
+      .title2{
+        font-size: rem(20);
+        line-height: rem(24);
+        color:$blue;
+        font-weight:600;
+      }
+    .competences__item--content{
+      flex-direction:column;
+    }
+    .title2.col-2{
+      width: 30%;
     }
   }
   .competences__item--content {
     display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
+    // justify-content: space-between;
   }
   .competences__item--right,
   .competences__item--left {
-    width: 50%;
+    width: 40%;
     max-width: 500px;
+  }
+  .competences__item--left{
+    margin-right: rem(130);
+  }
+  .competences__item--top,
+  .competences__item--down {
+    width: 100%;
+    display: flex;
+    .col-1, .col-2{
+      width:40%;
+    }
+    .col-1{
+      margin-right:rem(130);
+    }
   }
 }

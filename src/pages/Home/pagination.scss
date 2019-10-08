@@ -39,8 +39,9 @@
   }
 
   li {
-    width: rem(30);
-    height: rem(30);
+    width: 30px;
+    height: 30px;
+    margin-right:2px;
     border-radius: 100%;
     background-color: #fff;
     border: 1px solid #fff;
@@ -50,6 +51,10 @@
     cursor: pointer;
     transition: 0.7s;
     float: left;
+    @media (max-width: $mobile_l) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   li.slick-active {
@@ -64,11 +69,15 @@
     border: 0;
     outline: none;
     background: transparent;
-    width: rem(16);
-    height: rem(16);
+    width: 16px;
+    height: 16px;
     background-color: #fff;
     background-color: #0d5ade;
     border-radius: 100%;
+    @media (max-width: $mobile_l) {
+      width: 10px;
+      height: 10px;
+    }
   }
 }
 
@@ -84,11 +93,15 @@
     border: 0;
     outline: none;
     background: transparent;
-    width: rem(16);
-    height: rem(16);
+    width: 16px;
+    height: 16px;
     background-color: #0d5ade;
     background-color: #fff;
-    border-radius: 50%;
+    border-radius: 100%;
+    @media (max-width: $mobile_l) {
+      width: 10px;
+      height: 10px;
+    }
   }
 
   li.slick-active {

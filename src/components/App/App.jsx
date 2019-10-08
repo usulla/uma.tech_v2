@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "../Nav/Nav.jsx";
 import ToggleMenu from "../ToggleMenu/ToggleMenu.jsx";
 import MobileMenu from "../MobileMenu/MobileMenu.jsx";
@@ -59,6 +60,7 @@ class App extends Component {
   render() {
     const { dataHeader, dataAbout, dataNews, dataLicenses, dataProducts, dataCompetences } = appData;
     return (
+      <Router>
       <React.Fragment>
         <Nav list={dataHeader.nav} isMobile={this.state.isMobile} />
         {this.state.isMobile ? (
@@ -66,12 +68,32 @@ class App extends Component {
             <MobileMenu list={dataHeader.nav} />
           </React.Fragment>
         ) : null}
-        {/* <Home
-          isMobile={this.state.isMobile}
-          dataNews={dataNews}
-          dataAbout={dataAbout}
-          header_title={dataHeader.title}
-        /> */}
+        
+
+        <Switch>
+          <Route exact path="/">
+            <Home isMobile={this.state.isMobile} dataNews={dataNews} dataAbout={dataAbout} header_title={dataHeader.title}/>
+          </Route>
+          <Route path="/products" >
+            <Products isMobile={this.state.isMobile} dataProducts={dataProducts}/>
+          </Route>
+          <Route path="/competencies">
+            <Competences isMobile={this.state.isMobile} dataCompetences={dataCompetences}/>
+          </Route>
+          <Route path="/licenses">
+            <Licenses isMobile={this.state.isMobile} dataLicenses={dataLicenses} />
+          </Route>
+          <Route path="/contacts">
+            <Contacts isMobile={this.state.isMobile} />
+          </Route>
+        </Switch>
+
+        {/* // <Home
+        //   isMobile={this.state.isMobile}
+        //   dataNews={dataNews}
+        //   dataAbout={dataAbout}
+        //   header_title={dataHeader.title}
+        // /> */}
         {/* <Licenses
           isMobile={this.state.isMobile}
           dataLicenses={dataLicenses}
@@ -80,9 +102,10 @@ class App extends Component {
           isMobile={this.state.isMobile}
         /> */}
         {/* <Products isMobile={this.state.isMobile} dataProducts={dataProducts}/> */}
-        <Competences isMobile={this.state.isMobile} dataCompetences={dataCompetences}/>
+        {/* // <Competences isMobile={this.state.isMobile} dataCompetences={dataCompetences}/> */}
         <Footer isMobile={this.state.isMobile} />
       </React.Fragment>
+      </Router>
     );
   }
 }

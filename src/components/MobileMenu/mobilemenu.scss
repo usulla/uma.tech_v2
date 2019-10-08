@@ -104,5 +104,16 @@
         transform: rotate(45deg);
       }
     }
+    &:hover{
+      @include animation(rotate 0.5s ease);
+    }
+  }
+  @include keyframes(rotate){
+    0%{
+      @include transform(scale(1));
+    }
+    100%{
+      @include transform(scale(0.8));
+    }
   }
 }

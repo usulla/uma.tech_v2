@@ -1,14 +1,14 @@
 @import "../../sass/variables.scss";
 @import "../../sass/mixins.scss";
 .contacts__wrap {
-  padding-bottom: 0;
+  padding-bottom: 0!important;
 }
 .contacts__items {
   position: relative;
   .contacts__item--map {
-    min-height: 70vh;
+    min-height: 90vh;
     height: 45vw;
-    margin-top: 97px;
+    margin-top: rem(97);
     @media (max-width: $mobile_l) {
       margin-top: 50px;
       height: 185vh;

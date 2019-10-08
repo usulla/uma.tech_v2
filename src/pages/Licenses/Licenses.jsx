@@ -12,9 +12,9 @@ const Licenses = ({ isMobile, dataLicenses }) => {
   return (
     <div className="page licenses__wrap container">
       <div className="licenses__content">
-        <h2 className="typography typography--header">
+        <h1 className="typography typography--header">
           <span>| </span>Лицензии
-        </h2>
+        </h1>
         <div className="license__items">
           {dataLicenses.map((item, index) => {
             return (

@@ -5,9 +5,9 @@ const Contacts = ({ isMobile }) => {
   return (
     <div className="page contacts__wrap container_big">
       <div className="contacts__content">
-        <h2 className="typography typography--header container">
+        <h1 className="typography typography--header container">
           <span>| </span>Контакты
-        </h2>
+        </h1>
         <div className="contacts__items">
           <div className="contacts__item--map">
             <iframe

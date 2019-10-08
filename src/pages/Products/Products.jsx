@@ -16,9 +16,9 @@ class Products extends Component {
     return (
       <div className="page products__wrap container_big">
         <div className="products__content">
-          <h2 className="typography typography--header container">
+          <h1 className="typography typography--header container">
             <span>| </span>Продукты
-          </h2>
+          </h1>
           <div className="products__items">
             <div className="products__item products__item-1">
               {!this.props.isMobile ? (

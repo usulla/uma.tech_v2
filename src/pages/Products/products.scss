@@ -9,6 +9,9 @@
 
 .products__items {
   padding: 67px 0 0;
+  @media (max-width: $mobile_l) {
+    padding: 45px 0 0;
+  }
 
   .products__item {
     padding: 130px 0;
