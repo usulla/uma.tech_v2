@@ -16,6 +16,7 @@
   .products__item {
     padding: 130px 0;
     display: flex;
+ 
     @media (max-width: $mobile_l) {
       flex-direction: column;
       padding: 56px 0;
@@ -91,6 +92,7 @@
 }
 @media (max-width: $mobile_l) {
   .products__item-4 {
+    padding-bottom: 0!important;
     .cdn_bg {
       max-width: 86px;
       padding-left: 0px !important;

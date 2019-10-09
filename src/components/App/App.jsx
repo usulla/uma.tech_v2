@@ -11,6 +11,7 @@ import Products from "../../pages/Products/Products.jsx";
 import Licenses from "../../pages/Licenses/Licenses.jsx";
 import Contacts from "../../pages/Contacts/Contacts.jsx";
 import Competences from "../../pages/Competences/Competences.jsx";
+import AboutUs from "../../pages/AboutUs/AboutUs.jsx";
 
 class App extends Component {
   constructor(props) {
@@ -58,53 +59,60 @@ class App extends Component {
   }
 
   render() {
-    const { dataHeader, dataAbout, dataNews, dataLicenses, dataProducts, dataCompetences } = appData;
+    const {
+      dataHeader,
+      dataAbout,
+      dataNews,
+      dataLicenses,
+      dataProducts,
+      dataCompetences
+    } = appData;
     return (
       <Router>
-      <React.Fragment>
-        <Nav list={dataHeader.nav} isMobile={this.state.isMobile} />
-        {this.state.isMobile ? (
-          <React.Fragment>
-            <MobileMenu list={dataHeader.nav} />
-          </React.Fragment>
-        ) : null}
-        
+        <React.Fragment>
+          <Nav list={dataHeader.nav} isMobile={this.state.isMobile} />
+          {this.state.isMobile ? (
+            <React.Fragment>
+              <MobileMenu list={dataHeader.nav} />
+            </React.Fragment>
+          ) : null}
 
-        <Switch>
-          <Route exact path="/">
-            <Home isMobile={this.state.isMobile} dataNews={dataNews} dataAbout={dataAbout} header_title={dataHeader.title}/>
-          </Route>
-          <Route path="/products" >
-            <Products isMobile={this.state.isMobile} dataProducts={dataProducts}/>
-          </Route>
-          <Route path="/competencies">
-            <Competences isMobile={this.state.isMobile} dataCompetences={dataCompetences}/>
-          </Route>
-          <Route path="/licenses">
-            <Licenses isMobile={this.state.isMobile} dataLicenses={dataLicenses} />
-          </Route>
-          <Route path="/contacts">
-            <Contacts isMobile={this.state.isMobile} />
-          </Route>
-        </Switch>
-
-        {/* // <Home
-        //   isMobile={this.state.isMobile}
-        //   dataNews={dataNews}
-        //   dataAbout={dataAbout}
-        //   header_title={dataHeader.title}
-        // /> */}
-        {/* <Licenses
-          isMobile={this.state.isMobile}
-          dataLicenses={dataLicenses}
-        /> */}
-        {/* <Contacts
-          isMobile={this.state.isMobile}
-        /> */}
-        {/* <Products isMobile={this.state.isMobile} dataProducts={dataProducts}/> */}
-        {/* // <Competences isMobile={this.state.isMobile} dataCompetences={dataCompetences}/> */}
-        <Footer isMobile={this.state.isMobile} />
-      </React.Fragment>
+          <Switch>
+            <Route exact path="/">
+              <Home
+                isMobile={this.state.isMobile}
+                dataNews={dataNews}
+                dataAbout={dataAbout}
+                header_title={dataHeader.title}
+              />
+            </Route>
+            <Route exact path="/about">
+              <AboutUs isMobile={this.state.isMobile} />
+            </Route>
+            <Route path="/products">
+              <Products
+                isMobile={this.state.isMobile}
+                dataProducts={dataProducts}
+              />
+            </Route>
+            <Route path="/competencies">
+              <Competences
+                isMobile={this.state.isMobile}
+                dataCompetences={dataCompetences}
+              />
+            </Route>
+            <Route path="/licenses">
+              <Licenses
+                isMobile={this.state.isMobile}
+                dataLicenses={dataLicenses}
+              />
+            </Route>
+            <Route path="/contacts">
+              <Contacts isMobile={this.state.isMobile} />
+            </Route>
+          </Switch>
+          <Footer isMobile={this.state.isMobile} />
+        </React.Fragment>
       </Router>
     );
   }

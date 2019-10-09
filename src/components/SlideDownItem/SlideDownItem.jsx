@@ -3,7 +3,6 @@ import "./slide_down_item.scss";
 import arrow_light from "../../images/arrow_light.svg";
 
 const SlideDownItem = ({ isMobile, items }) => {
-  console.log(items);
   function handleClick(e) {
     const self = e.currentTarget;
     const descriptionEl = self.parentNode.previousSibling.querySelector(
