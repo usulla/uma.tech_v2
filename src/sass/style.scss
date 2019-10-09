@@ -134,6 +134,7 @@ li {
 #root h2 {
     font-size: rem(45);
     line-height: rem(55);
+    font-weight:600;
     @media (max-width: $mobile_l) {
       font-size: 32px;
       line-height: 33px;

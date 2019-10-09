@@ -26,22 +26,26 @@
     .license__item--left {
       display: flex;
       justify-content: space-between;
+      /* TODO delete */
       @media (max-width: $mobile_l) {
         border-bottom: 0.461165px solid $gray;
         padding: 20px 0px;
         width: calc(100% - 20px);
         display: block;
       }
+      /* TODO delete */
       .title {
         width: 55%;
         max-width: 570px;
         display: inline-block;
+        /* TODO delete */
         @media (max-width: $mobile_l) {
           font-size: 18px;
           line-height: 22px;
           width: 100%;
           padding-right: 15px;
         }
+        /* TODO delete */
       }
       .props {
         display: flex;
@@ -93,6 +97,7 @@
         }
       }
     }
+    /* TODO delete */
     .license__item--right {
       @media (min-width: $mobile_l+1) {
         display: none;
@@ -110,5 +115,6 @@
         }
       }
     }
+    /* TODO delete */
   }
 }
