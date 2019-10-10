@@ -110,10 +110,7 @@ const AboutUs = ({ isMobile }) => {
             )}
             {isMobile && (
               <div className="branchs container">
-                <Slider
-                  {...settings3}
-                  className="about-us__slider"
-                >
+                <Slider {...settings3} className="about-us__slider">
                   <div className="branch">
                     <div className="title">
                       Мы строим цифровую экономику новой России,
@@ -231,7 +228,10 @@ const AboutUs = ({ isMobile }) => {
           </div>
         </div>
         {!isMobile && (
-          <Slider {...settings} className="slider--full about-us__slider container_big">
+          <Slider
+            {...settings}
+            className="slider--full about-us__slider container_big"
+          >
             <img src={slide_1} />
             <img src={slide_2} />
             <img src={slide_3} />

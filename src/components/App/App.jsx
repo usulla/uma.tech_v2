@@ -78,7 +78,7 @@ class App extends Component {
           ) : null}
 
           <Switch>
-            <Route exact path="/bin/uma_tech/">
+            <Route exact path="/">
               <Home
                 isMobile={this.state.isMobile}
                 dataNews={dataNews}
@@ -86,28 +86,28 @@ class App extends Component {
                 header_title={dataHeader.title}
               />
             </Route>
-            <Route exact path="/bin/uma_tech/about">
+            <Route exact path="/about">
               <AboutUs isMobile={this.state.isMobile} />
             </Route>
-            <Route path="/bin/uma_tech/products">
+            <Route path="/products">
               <Products
                 isMobile={this.state.isMobile}
                 dataProducts={dataProducts}
               />
             </Route>
-            <Route path="/bin/uma_tech/competencies">
+            <Route path="/competencies">
               <Competences
                 isMobile={this.state.isMobile}
                 dataCompetences={dataCompetences}
               />
             </Route>
-            <Route path="/bin/uma_tech/licenses">
+            <Route path="/licenses">
               <Licenses
                 isMobile={this.state.isMobile}
                 dataLicenses={dataLicenses}
               />
             </Route>
-            <Route path="/bin/uma_tech/contacts">
+            <Route path="/contacts">
               <Contacts isMobile={this.state.isMobile} />
             </Route>
           </Switch>

@@ -44,10 +44,6 @@ class Projects extends Component {
       prevArrow: <PrevArrow />,
       responsive: [
         {
-          breakpoint: 3500,
-          settings: "unslick"
-        },
-        {
           breakpoint: 769,
           settings: {
             slidesToShow: 2,

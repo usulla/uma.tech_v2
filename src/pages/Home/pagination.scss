@@ -111,9 +111,9 @@
 .pagination3 {
   margin-top: -80px;
   position: absolute;
-  left: calc(50% - 670px);
+  left: calc(50% - 660px);
   @media (max-width: $desctops_m) and (min-width: $mobile_l+1 ) {
-    left: calc(50% + 5% - 660px );
+    left: 5%;
   }
   li {
     background-color: transparent;

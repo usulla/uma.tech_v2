@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c73e7c8f1366e3531e1fad63b91fb248",
+    "revision": "2ef179c7d141453e7c0234b500000db0",
     "url": "/bin/uma_tech/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bin/uma_tech/static/css/2.0ebc9e02.chunk.css"
   },
   {
-    "revision": "0872ce8afc6e1313c13c",
-    "url": "/bin/uma_tech/static/css/main.fdb8d793.chunk.css"
+    "revision": "dc736dbbd4093433d642",
+    "url": "/bin/uma_tech/static/css/main.3e7b35a7.chunk.css"
   },
   {
     "revision": "5dd456a3814684314687",
     "url": "/bin/uma_tech/static/js/2.847ef79b.chunk.js"
   },
   {
-    "revision": "0872ce8afc6e1313c13c",
-    "url": "/bin/uma_tech/static/js/main.6909f689.chunk.js"
+    "revision": "dc736dbbd4093433d642",
+    "url": "/bin/uma_tech/static/js/main.60e6e823.chunk.js"
   },
   {
     "revision": "069e7f25cd49ae0de83d",

@@ -52,17 +52,26 @@
         flex-wrap: wrap;
         justify-content: space-between;
         width: 45%;
-        transition: height 0.5s ease;
+        .props-content {
+          @media (min-width: $mobile_l+1) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
+        }
+        /* TODO delete */
         @media (max-width: $mobile_l) {
           display: block;
           width: 100%;
-          //   padding-top: 15px;
+          transition: height 0.5s ease, opacity 0.5s ease;
           height: 0;
+          opacity: 0.2;
           overflow: hidden;
           &.active {
-            height: 100%;
+            opacity: 1;
           }
         }
+        /* TODO delete */
         .prop {
           width: 45%;
           margin-right: 2%;

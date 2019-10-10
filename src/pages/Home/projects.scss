@@ -46,7 +46,7 @@
           position: absolute;
           opacity: 1;
           transition: filter 0.5s ease;
-          filter:grayscale(100%)
+          filter: grayscale(100%);
         }
         .tnt {
           max-width: 82px;
@@ -57,7 +57,7 @@
         &:hover {
           cursor: pointer;
           img {
-            filter:grayscale(0%)
+            filter: grayscale(0%);
           }
         }
         &:hover {
@@ -101,12 +101,12 @@
     }
   }
   .carousel-logo {
-    padding-bottom: 40px;
-    display: flex;
+    // padding-bottom: 40px;
+    // display: flex;
     align-items: center;
     justify-content: center;
     max-width: 90%;
-    margin: 40px auto;
+    margin: 40px auto 80px;
   }
   .carousel-logo .slick-track {
     display: flex;
@@ -119,11 +119,13 @@
   .slick-arrow {
     position: absolute;
     width: 15px;
+    top: calc(50% - 12px);
     &.next-slick {
       right: 10%;
     }
     &.prev-slick {
       left: 10%;
+      z-index: 3;
       transform: rotate(180deg);
     }
     &:hover {
