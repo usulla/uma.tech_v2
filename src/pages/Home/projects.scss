@@ -6,6 +6,7 @@
   margin-bottom: rem(200);
   @media (max-width: $mobile_l) {
     margin-bottom: rem(40);
+    margin-top:10px;
   }
   &__header {
     font-size: rem(45);
@@ -121,10 +122,10 @@
     width: 15px;
     top: calc(50% - 12px);
     &.next-slick {
-      right: 10%;
+      right: 5%;
     }
     &.prev-slick {
-      left: 10%;
+      left: 5%;
       z-index: 3;
       transform: rotate(180deg);
     }

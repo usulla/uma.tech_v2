@@ -1,5 +1,4 @@
 import React from "react";
-import News from "./News.jsx";
 import "./competence.scss";
 
 const Competence = ({ isMobile, dataNews }) => {
@@ -9,17 +8,18 @@ const Competence = ({ isMobile, dataNews }) => {
         <div class="competence__top">
           <div class="competence__text container">
             <h2 class="typography typography--header">
-              У нас уникальные компетенции
+              Наши уникальные компетенции
             </h2>
             <p class="typography">
-              В области разработки программного обеспечения, эксплуатации
+              Создание высоконадежных и быстрорастущих сервисов, накопление,
+              обогащение и анализ Big Data, AI & Machine Learning, разработка
+              программного обеспечения для всех видов платформ, эксплуатация
               распределенной инфраструктуры, способной работать под высокими
-              нагрузками, аналитики, Big Data, информационной безопасности и
-              управления информацией.
+              нагрузками – основные направления, где мы обладаем уникальными
+              компетенциями на рынке.
             </p>
           </div>
         </div>
-        <News isMobile={isMobile} dataNews={dataNews} />
       </div>
     </section>
   );

@@ -90,8 +90,8 @@ h3 {
     font-size: 20px;
   }
 }
-#root h1{
-  @media (max-width: $mobile_l) { 
+#root h1 {
+  @media (max-width: $mobile_l) {
     font-size: 28px;
     line-height: 34px;
   }
@@ -131,13 +131,13 @@ li {
   list-style-type: none;
 }
 #root h2 {
-    font-size: rem(45);
-    line-height: rem(55);
-    font-weight:600;
-    @media (max-width: $mobile_l) {
-      font-size: 32px;
-      line-height: 33px;
-    }
+  font-size: rem(45);
+  line-height: rem(55);
+  font-weight: 600;
+  @media (max-width: $mobile_l) {
+    font-size: 32px;
+    line-height: 33px;
+  }
 }
 .container {
   margin-right: auto;
@@ -160,7 +160,7 @@ li {
   width: 1320px;
   max-width: 100%;
   margin: 0 auto;
-  @media (max-width: $desctops_m){
+  @media (max-width: $desctops_m) {
     max-width: 90%;
   }
   @media (max-width: $mobile_l) {
@@ -181,8 +181,8 @@ li {
   font-size: rem(60);
   line-height: rem(73);
   @media (max-width: $tablets) {
-    font-size: rem(46);
-    line-height: rem(49);
+    font-size: rem(40);
+    line-height: rem(43);
   }
   @media (max-width: $mobile_l) {
     font-size: rem(28);
@@ -220,11 +220,11 @@ li {
   }
 }
 .typography--headersm {
-  font-size: rem(40);
-  line-height: rem(50);
+  font-size: rem(45);
+  line-height: rem(55);
   @media (max-width: $tablets) {
-    font-size: rem(30);
-    line-height: rem(35);
+    font-size: rem(40);
+  line-height: rem(50);
   }
   @media (max-width: $mobile_l) {
     font-size: 1.3rem;
@@ -239,8 +239,8 @@ li {
     margin-bottom: 1.5rem !important;
   }
   @media (max-width: $mobile_l) {
-    font-size: 1rem;
-    line-height: 1.4rem;
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 .desctop {

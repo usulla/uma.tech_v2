@@ -15,11 +15,46 @@ var settings = {
 const News = ({ isMobile, dataNews }) => {
   if (!isMobile) {
     return (
-      <div className="competence__wrap container">
-        <div className="competence__content">
+      <section class="section">
+        <div class="news__top">
+          <div class="news__text container">
+            <h2 class="typography typography--header">Новости</h2>
+          </div>
+        </div>
+        <div className="news__wrap container">
+          <div className="news__content">
+            {dataNews.map((item, index) => {
+              return (
+                <div className="news__item">
+                  <p className="hashtag">
+                    <b>{item.hashtag}</b>
+                  </p>
+                  <h3 dangerouslySetInnerHTML={{ __html: item.title }}></h3>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: item.text
+                    }}
+                  ></p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+    );
+  }
+  return (
+    <section class="section news">
+      <div class="news__top">
+        <div class="news__text container">
+          <h2 class="typography typography--header">Новости</h2>
+        </div>
+      </div>
+      <div className="news__wrap">
+        <Slider {...settings} className="news__content">
           {dataNews.map((item, index) => {
             return (
-              <div className="competence__item">
+              <div className="news__item">
                 <p className="hashtag">
                   <b>{item.hashtag}</b>
                 </p>
@@ -32,30 +67,9 @@ const News = ({ isMobile, dataNews }) => {
               </div>
             );
           })}
-        </div>
+        </Slider>
       </div>
-    );
-  }
-  return (
-    <div className="competence__wrap">
-      <Slider {...settings} className="competence__content">
-        {dataNews.map((item, index) => {
-          return (
-            <div className="competence__item">
-              <p className="hashtag">
-                <b>{item.hashtag}</b>
-              </p>
-              <h3 dangerouslySetInnerHTML={{ __html: item.title }}></h3>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: item.text
-                }}
-              ></p>
-            </div>
-          );
-        })}
-      </Slider>
-    </div>
+    </section>
   );
 };
 export default News;
