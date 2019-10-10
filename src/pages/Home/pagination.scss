@@ -112,6 +112,9 @@
   margin-top: -80px;
   position: absolute;
   left: calc(50% - 670px);
+  @media (max-width: $desctops_m) and (min-width: $mobile_l+1 ) {
+    left: calc(50% + 5% - 660px );
+  }
   li {
     background-color: transparent;
     border: 1px solid transparent;

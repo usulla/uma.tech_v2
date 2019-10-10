@@ -9,6 +9,8 @@
     min-height: 90vh;
     height: 45vw;
     margin-top: rem(97);
+    max-width: 100%;
+    overflow: hidden;
     @media (max-width: $mobile_l) {
       margin-top: 50px;
       height: 185vh;
@@ -35,8 +37,12 @@
     .contacts__item--data {
       display: inline-block;
       color: #fff;
+      padding: 0 1rem;
       @media (max-width: $mobile_l) {
         width: 80%;
+      }
+      .button-mail{
+        margin: 8px;
       }
       .contacts__data-row {
         padding-bottom: rem(35);
@@ -63,6 +69,7 @@
             padding-top: 30px;
           }
         }
+
       }
     }
   }

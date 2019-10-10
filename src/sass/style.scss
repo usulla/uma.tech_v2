@@ -3,7 +3,6 @@
 // Core
 @import "variables.scss";
 @import "mixins.scss";
-@import "../css/fontawesome.css";
 
 img {
   max-width: 100%;
@@ -159,8 +158,11 @@ li {
 /* From Lena Start*/
 .container {
   width: 1320px;
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
+  @media (max-width: $desctops_m){
+    max-width: 90%;
+  }
   @media (max-width: $mobile_l) {
     max-width: 90%;
   }
@@ -193,6 +195,9 @@ li {
   // }
   span {
     color: $blue;
+    @media (min-width: $mobile_l+1) {
+      margin-left: rem(-25);
+    }
   }
 }
 .button {

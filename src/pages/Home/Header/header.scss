@@ -2,7 +2,7 @@
 @import "../../../sass/mixins.scss";
 
 header{
-  background: #01081b;
+  background: #010c1f;
 }
 .content {
   position: relative;
@@ -39,11 +39,11 @@ header{
   }
 }
 .bg {
-  background: #000 url(../../../images/bg/bg-head.jpg) no-repeat center;
+  background: #010c1f url(../../../images/bg/bg-head.jpg) no-repeat center;
   background-size: cover;
 
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    background: #000 url(../../../images/bg/bg-head@2x.jpg) no-repeat center;
+    background: #010c1f url(../../../images/bg/bg-head@2x.jpg) no-repeat center;
     background-size: cover;
   }
   @media (max-width: $mobile_l) {

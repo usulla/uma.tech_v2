@@ -2,6 +2,7 @@
   "name": "uma.tech",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/bin/uma_tech/",
   "dependencies": {
     "@material-ui/core": "^4.3.3",
     "@material-ui/icons": "^4.2.1",
