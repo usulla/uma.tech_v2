@@ -37,7 +37,7 @@ const Nav = ({ list, isMobile }) => {
       <div class="container">
         <div class="nav__wrap">
           <div class="nav__left">
-          <Link to='/bin/uma_tech/'><img src={logo} alt="Uma.Tech" /></Link>
+          <Link to='/'><img src={logo} alt="Uma.Tech" /></Link>
           </div>
           <ToggleMenu />
         </div>
