@@ -1,6 +1,7 @@
 import React from "react";
 import "./news.scss";
 import Slider from "react-slick";
+import { Parallax, Background } from "react-parallax";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -16,11 +17,18 @@ const News = ({ isMobile, dataNews }) => {
   if (!isMobile) {
     return (
       <section class="section">
-        <div class="news__top">
-          <div class="news__text container">
-            <h2 class="typography typography--header">Новости</h2>
+        <Parallax
+          blur={10}
+          bgImage={require("path/to/image.jpg")}
+          bgImageAlt="the cat"
+          strength={200}
+        >
+          <div class=" ф">
+            <div class="news__text container">
+              <h2 class="typography typography--header">Новости</h2>
+            </div>
           </div>
-        </div>
+        </Parallax>
         <div className="news__wrap container">
           <div className="news__content">
             {dataNews.map((item, index) => {
