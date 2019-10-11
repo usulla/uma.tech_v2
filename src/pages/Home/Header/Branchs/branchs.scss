@@ -64,9 +64,23 @@
       cursor: pointer;
       background: #0945ad;
     }
+    span{
+      width:100%;
+    }
     a {
+      display: block;
       color: #fff;
       text-decoration: none;
+      display: flex;
+      min-height: 4.5rem;
+      align-items: center;
+        justify-content: center;
+      @media (max-width: $mobile_l) {
+        height: 55px;
+  
+        line-height: 1.4rem;
+        
+      }
     }
     &:last-child {
       margin-right: 0;

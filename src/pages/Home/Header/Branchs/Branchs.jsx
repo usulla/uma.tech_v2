@@ -17,9 +17,9 @@ const Branchs = ({ isMobile }) => {
             <div className="bottom__item">
               <span>
                 <Link to="/competencies#management">
-                  Управление IT-
+                  Управление 
                   <br className="desctop" />
-                  инфраструктурой
+                  IT-инфраструктурой
                 </Link>
               </span>
             </div>

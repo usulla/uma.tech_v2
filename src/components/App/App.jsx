@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "../Nav/Nav.jsx";
 import ToggleMenu from "../ToggleMenu/ToggleMenu.jsx";
 import MobileMenu from "../MobileMenu/MobileMenu.jsx";
