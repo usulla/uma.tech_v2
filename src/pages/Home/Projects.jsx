@@ -35,7 +35,7 @@ class Projects extends Component {
   render() {
     var settings = {
       arrows: true,
-      autoplay: true,
+      autoplay: false,
       dots: false,
       infinite: true,
       speed: 600,
@@ -72,7 +72,6 @@ class Projects extends Component {
             </div>
             <div className="project__cont">
               {!this.props.isMobile ? (
-                <React.Fragment>
                   <div className="project__logos">
                       <a className="logo-item" href="http://tnt-online.ru/" target="_blank">
                         <img src={project_1_hover} alt="" class="tnt hide" />
@@ -132,10 +131,9 @@ class Projects extends Component {
                         />
                       </a>
                   </div>
-                </React.Fragment>
               ) : (
                 <Slider {...settings} className="carousel-logo">
-                <a href="http://tnt-online.ru/"></a><img src={project_1_hover} alt="" />
+                <a href="http://tnt-online.ru/" target="_blank"><img src={project_1_hover} alt="" /></a>
                 <a href="https://tv3.ru" target="_blank"><img src={project_2_hover} alt="" /></a>
                 <a href="https://friday.ru/" target="_blank"><img src={project_3_hover} alt="" /></a>
                 <a href="https://2x2tv.ru" target="_blank"><img src={project_4_hover} alt="" /></a>

@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import style from "./branchs.scss";
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as Link } from "react-router-hash-link";
 
 const Branchs = ({ isMobile }) => {
   return (
@@ -19,7 +19,7 @@ const Branchs = ({ isMobile }) => {
                 <Link to="/competencies#management">
                   Управление IT-
                   <br className="desctop" />
-                  инфраструктуройcd
+                  инфраструктурой
                 </Link>
               </span>
             </div>

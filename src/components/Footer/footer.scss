@@ -80,4 +80,9 @@
       height: 1.6rem;
     }
   }
+  .cookie_rules{
+    &:hover{
+      cursor: pointer;
+    }
+  }
 }

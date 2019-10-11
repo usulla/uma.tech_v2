@@ -79,10 +79,14 @@
     }
   }
   .competences__item-3 {
-    display: inline;
+    // display: inline;
+    @media (max-width: $mobile_l) {
+      padding-bottom:0;
+    }
     .title {
       @media (min-width: $mobile_l+1) {
         display: inline;
+ 
       }
       margin-top: 30px;
     }

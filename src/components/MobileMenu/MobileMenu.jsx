@@ -15,7 +15,7 @@ const MobileMenu = ({ list }) => {
   return (
     <div className="mobile-menu">
       <div className="mobile-menu-inner"> 
-      <Link to='/bin/uma_tech/'><img src={logo} alt="Uma.Tech" className="logo-uma" onClick={handleClick}/></Link>
+      <Link to='/uma_tech/'><img src={logo} alt="Uma.Tech" className="logo-uma" onClick={handleClick}/></Link>
         <ul>
           {list.map((li, index) => (
             <li key={index} onClick={handleClick}>

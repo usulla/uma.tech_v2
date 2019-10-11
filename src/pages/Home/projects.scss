@@ -25,7 +25,7 @@
       max-width: 82%;
       margin: 0 auto;
       @media (max-width: $mobile_l) {
-        max-width: 32% !important;
+        max-width: 70% !important;
       }
     }
     .project__logos {
@@ -112,6 +112,9 @@
   .carousel-logo .slick-track {
     display: flex;
     align-items: center;
+  }
+  .slick-slide a{
+    width: 50%!important;
   }
   .slick-slide img {
     width: auto !important;

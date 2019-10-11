@@ -42,7 +42,7 @@ const Contacts = ({ isMobile }) => {
               </div>
               <a
                 className="button button-mail"
-                href="mailto:talents@uma.tech?subject=Uma.Tech"
+                href="mailto:info@uma.tech?subject=Uma.Tech"
                 target="_blank"
               >
                 Написать
