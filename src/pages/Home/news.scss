@@ -1,6 +1,9 @@
 @import "../../sass/variables.scss";
 @import "../../sass/mixins.scss";
 
+.react-parallax-background-children {
+  width: 100%;
+}
 .news {
   @media (max-width: $mobile_l) {
     &__text h2 {
@@ -8,6 +11,7 @@
       margin-top: -9rem;
     }
   }
+
   &__top {
     display: flex;
     flex-direction: column;
@@ -24,9 +28,9 @@
       height: 77vw;
       min-height: auto;
     }
-    h2{
+    h2 {
       @media (min-width: $mobile_l+1) {
-      margin-top:-2rem;
+        margin-top: -2rem;
       }
     }
   }
