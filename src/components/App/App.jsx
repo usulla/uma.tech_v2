@@ -111,7 +111,7 @@ class App extends Component {
               <Contacts isMobile={this.state.isMobile} />
             </Route>
           </Switch>
-          <Footer isMobile={this.state.isMobile} />
+          <Footer isMobile={this.state.isMobile} list={dataHeader.nav}/>
         </React.Fragment>
       </Router>
     );

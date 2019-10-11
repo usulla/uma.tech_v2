@@ -3,23 +3,23 @@
     "nav": [
       {
         "title": "О нас",
-        "src": "/bin/uma_tech/about"
+        "src": "/about"
       },
       {
         "title": "Продукты",
-        "src": "/bin/uma_tech/products"
+        "src": "/products"
       },
       {
         "title": "Компетенции",
-        "src": "/bin/uma_tech/competencies"
+        "src": "/competencies"
       },
       {
         "title": "Лицензии",
-        "src": "/bin/uma_tech/licenses"
+        "src": "/licenses"
       },
       {
         "title": "Контакты",
-        "src": "/bin/uma_tech/contacts"
+        "src": "/contacts"
       }
     ],
     "alt": "Uma.Tech",

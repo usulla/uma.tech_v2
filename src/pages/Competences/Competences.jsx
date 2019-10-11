@@ -18,7 +18,7 @@ const Competences = ({ isMobile, dataCompetences }) => {
 
         <div className="competences__items">
           {/* 1 */}
-          <div className="competences__item container competences__item-1 competences__item--white">
+          <div id="highload" className="competences__item container competences__item-1 competences__item--white">
             <h2>{dataCompetences[0].title1}</h2>
             <div className="competences__item--content">
               <div className="competences__item--left">
@@ -49,7 +49,7 @@ const Competences = ({ isMobile, dataCompetences }) => {
             </div>
           </div>
           {/* 2 */}
-          <div className="competences__item competences__item-2 competences__item--blue">
+          <div id="management" className="competences__item competences__item-2 competences__item--blue">
             <div className="container">
               <h2>{dataCompetences[1].title1}</h2>
               <h3>{dataCompetences[1].title2}</h3>
@@ -93,7 +93,7 @@ const Competences = ({ isMobile, dataCompetences }) => {
             {isMobile && <img src={competition_bg_mob} />}
           </div>
           {/* 3 */}
-          <div className="competences__item competences__item-3 competences__item--white">
+          <div id="machine-learning" className="competences__item competences__item-3 competences__item--white">
             <div className="container">
               <h2>{dataCompetences[2].title1}</h2>
 

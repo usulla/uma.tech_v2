@@ -74,66 +74,78 @@ class Projects extends Component {
               {!this.props.isMobile ? (
                 <React.Fragment>
                   <div className="project__logos">
-                    <div className="logo-item">
-                      <img src={project_1_hover} alt="" class="tnt hide" />
-                    </div>
-                    <div className="logo-item">
-                      <img src={project_2_hover} alt="" className="tv3 hide" />
-                    </div>
-                    <div className="logo-item">
-                      <img src={project_3_hover} alt="" class="pyatnica hide" />
-                    </div>
-                    <div className="logo-item">
-                      <img src={project_4_hover} alt="" class="dvax2 hide" />
-                    </div>
-                    <div className="logo-item">
-                      <img src={project_5_hover} alt="" class="tnt4 hide" />
-                    </div>
-                    <div className="logo-item">
-                      <img src={project_6_hover} alt="" class="super hide" />
-                    </div>
-                    <div className="logo-item">
-                      <img src={project_7_hover} alt="" class="match hide" />
-                    </div>
-                    <div className="logo-item">
-                      <img src={project_8_hover} alt="" class="premier hide" />
-                    </div>
-                    <div className="logo-item">
-                      <img
-                        src={project_11_hover}
-                        alt=""
-                        class="match_club hide"
-                      />
-                    </div>
-                    <div className="logo-item">
-                      <img
-                        src={project_9_hover}
-                        alt=""
-                        class="match_premier hide"
-                      />
-                    </div>
-                    <div className="logo-item">
-                      <img
-                        src={project_10_hover}
-                        alt=""
-                        class="sportbox hide"
-                      />
-                    </div>
+                      <a className="logo-item" href="http://tnt-online.ru/" target="_blank">
+                        <img src={project_1_hover} alt="" class="tnt hide" />
+                      </a>
+                      <a className="logo-item" href="https://tv3.ru" target="_blank">
+                        <img
+                          src={project_2_hover}
+                          alt=""
+                          className="tv3 hide"
+                        />
+                      </a>
+                      <a className="logo-item" href="https://friday.ru/" target="_blank">
+                        <img
+                          src={project_3_hover}
+                          alt=""
+                          class="pyatnica hide"
+                        />
+                      </a>
+                      <a className="logo-item" href="https://2x2tv.ru" target="_blank">
+                        <img src={project_4_hover} alt="" class="dvax2 hide" />
+                      </a>
+                      <a className="logo-item" href="https://tnt4.ru" target="_blank">
+                        <img src={project_5_hover} alt="" class="tnt4 hide" />
+                      </a>
+                      <a className="logo-item" href="https://superkanal.ru/" target="_blank">
+                        <img src={project_6_hover} alt="" class="super hide" />
+                      </a>
+                      <a className="logo-item" href="https://matchtv.ru/" target="_blank">
+                        <img src={project_7_hover} alt="" class="match hide" />
+                      </a>
+                      <a className="logo-item" href="https://premier.one/" target="_blank">
+                        <img
+                          src={project_8_hover}
+                          alt=""
+                          class="premier hide"
+                        />
+                      </a>
+                      <a className="logo-item" href="https://match-club.ru/download" target="_blank">
+                        <img
+                          src={project_11_hover}
+                          alt=""
+                          class="match_club hide"
+                        />
+                      </a>
+                      <a className="logo-item" href="https://matchpremier.ru/" target="_blank">
+                        <img
+                          src={project_9_hover}
+                          alt=""
+                          class="match_premier hide"
+                        />
+                      </a>
+                    <a className="logo-item"href="https://news.sportbox.ru" target="_blank">
+                        <img
+                          src={project_10_hover}
+                          alt=""
+                          class="sportbox hide"
+                        />
+                      </a>
                   </div>
                 </React.Fragment>
               ) : (
                 <Slider {...settings} className="carousel-logo">
-                  <img src={project_1_hover} alt="" />
-                  <img src={project_2_hover} alt="" />
-                  <img src={project_3_hover} alt="" />
-                  <img src={project_4_hover} alt="" />
-                  <img src={project_5_hover} alt="" />
-                  <img src={project_6_hover} alt="" />
-                  <img src={project_7_hover} alt="" />
-                  <img src={project_8_hover} alt="" />
-                  <img src={project_11_hover} alt="" />
-                  <img src={project_9_hover} alt="" />
-                  <img src={project_10_hover} alt="" />
+                <a href="http://tnt-online.ru/"></a><img src={project_1_hover} alt="" />
+                <a href="https://tv3.ru" target="_blank"><img src={project_2_hover} alt="" /></a>
+                <a href="https://friday.ru/" target="_blank"><img src={project_3_hover} alt="" /></a>
+                <a href="https://2x2tv.ru" target="_blank"><img src={project_4_hover} alt="" /></a>
+                <a href="https://tnt4.ru" target="_blank"> <img src={project_5_hover} alt="" /></a>
+                <a href="https://superkanal.ru/" target="_blank"><img src={project_6_hover} alt="" /></a>
+                <a href="https://matchtv.ru/" target="_blank"><img src={project_7_hover} alt="" /></a>
+                <a href="ttps://premier.one/" target="_blank"><img src={project_8_hover} alt="" /></a>
+                <a href="https://match-club.ru/download" target="_blank"><img src={project_11_hover} alt="" /></a>
+                <a href="https://matchpremier.ru/" target="_blank"><img src={project_9_hover} alt="" /></a>
+                <a href="https://news.sportbox.ru" target="_blank"><img src={project_10_hover} alt="" /></a>
                 </Slider>
               )}
             </div>

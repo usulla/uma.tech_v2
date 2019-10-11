@@ -59,6 +59,15 @@
     margin-right: rem(35);
     min-width: rem(280);
     min-height: rem(90);
+    transition: background .5s ease;
+    &:hover {
+      cursor: pointer;
+      background: #0945ad;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
     &:last-child {
       margin-right: 0;
     }

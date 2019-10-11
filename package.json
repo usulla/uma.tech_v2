@@ -2,7 +2,6 @@
   "name": "uma.tech",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/bin/uma_tech/",
   "dependencies": {
     "@material-ui/core": "^4.3.3",
     "@material-ui/icons": "^4.2.1",
@@ -13,6 +12,7 @@
     "react-app-polyfill": "^1.0.2",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^1.2.2",
     "react-scripts": "3.0.1",
     "react-slick": "^0.25.2",
     "slick-carousel": "^1.8.1"

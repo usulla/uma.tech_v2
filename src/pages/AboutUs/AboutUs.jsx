@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { HashLink as Link } from "react-router-hash-link";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./about_us.scss";
@@ -36,6 +37,19 @@ const AboutUs = ({ isMobile }) => {
         <h1 className="typography typography--header container">
           <span>| </span>О нас
         </h1>
+        {!isMobile && (
+          <nav className="branchs_items branchs_items__about container">
+            <Link smooth to="#mission" className="branchs_item">
+              Миссия
+            </Link>
+            <Link smooth to="#values" className="branchs_item">
+              Ценности
+            </Link>
+            <Link smooth to="#office" className="branchs_item">
+              Офис
+            </Link>
+          </nav>
+        )}
         <div className="about-us__items">
           {/* 1 */}
           <div className="about-us__item container about-us__item-1">
@@ -65,7 +79,10 @@ const AboutUs = ({ isMobile }) => {
             </div>
           </div>
           {/* 2 */}
-          <div className="about-us__item about-us__item-2 about-us__item--blue">
+          <div
+            id="mission"
+            className="about-us__item about-us__item-2 about-us__item--blue"
+          >
             <h2>Наша миссия</h2>
             {!isMobile && (
               <div className="branchs container">
@@ -153,7 +170,10 @@ const AboutUs = ({ isMobile }) => {
             )}
           </div>
           {/* 3 */}
-          <div className="about-us__item container about-us__item-3">
+          <div
+            id="values"
+            className="about-us__item container about-us__item-3"
+          >
             <h2 className="typography typography--header">
               <span>| </span>Ценности
             </h2>
@@ -191,7 +211,10 @@ const AboutUs = ({ isMobile }) => {
             </div>
           </div>
           {/* 4 */}
-          <div className="about-us__item container about-us__item-4">
+          <div
+            id="office"
+            className="about-us__item container about-us__item-4"
+          >
             <h2 className="typography typography--header">
               <span>| </span>Офис
             </h2>
